@@ -14,6 +14,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"target_link_libraries",
 			"add_definitions"
 		],
 		"files" : 
@@ -28,13 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 6,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -51,11 +58,11 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "UNICODE"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "_UNICODE"
 				}
 			],
@@ -84,8 +91,13 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
+				"fragment" : "-static",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lgdi32",
+				"role" : "libraries"
 			},
 			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",

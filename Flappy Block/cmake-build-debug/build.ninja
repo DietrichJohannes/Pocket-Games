@@ -66,7 +66,8 @@ build CMakeFiles/Flappy_Block.dir/main.cpp.obj: CXX_COMPILER__Flappy_Block_unsca
 
 build Flappy_Block.exe: CXX_EXECUTABLE_LINKER__Flappy_Block_Debug CMakeFiles/Flappy_Block.dir/main.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_FLAGS = -static
+  LINK_LIBRARIES = -lgdi32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Flappy_Block.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
